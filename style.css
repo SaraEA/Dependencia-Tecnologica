@@ -5,13 +5,16 @@ body {
     color: #000000; /* El color del texto*/
   
   p {
-      font-family: Arial;
-      font-size: 17px;
+     animation-duration: 3s;
+     animation-name: slidein;
 
   }
   h3 {
-      animation: rebote 3s infinite;
+      
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
       color:#6258fa;
+      animation-name: rebote;
 
   }
 }
@@ -52,13 +55,7 @@ img {
       transform: rotate(360deg); /* La rotación final es de 360 grados */
 
     }
-
   }
-
-  
-
-  /* Animación de rebote */
-
   .rebote {
 
     animation: rebotar 1s infinite; /* La animación "rebotar" dura 1 segundo y se repite infinitamente */
@@ -77,4 +74,21 @@ img {
 
       transform: translateY(-10px); /* Pico del rebote: desplazamiento hacia arriba */
 
+    }
+
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+    50% {
+      font-size: 100%;
+      margin-left: 25%;
+      width: 150%;
     }
