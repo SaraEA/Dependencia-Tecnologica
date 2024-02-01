@@ -1,0 +1,80 @@
+body {
+    font-family: Arial; /* Familia de fuentes */
+    font-size: 16px; /* El tamaño de la fuente principal en el tag <p></p> */
+    background-color: #ffffff; /* El color del fondo de la página web */
+    color: #000000; /* El color del texto*/
+  
+  p {
+      font-family: Arial;
+      font-size: 17px;
+
+  }
+  h3 {
+      animation: rebote 3s infinite;
+      color:#6258fa;
+
+  }
+}
+h1 {
+    animation: color-change 3s infinite;
+    color: #08b083; /* El color de la cabecera */
+    font-size: 30px; /* El tamaño de la fuente de la cabecera */
+    font-family: 'Arial'; /* La familia tipográfica utilizada en la cabecera */
+}
+
+img {
+      font-size: 20px;
+}
+
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: rgb(201, 14, 226);
+    }
+}
+@keyframes girar {
+
+    from {
+
+      transform: rotate(0deg); /* La rotación inicial es de 0 grados */
+
+    }
+
+    to {
+
+      transform: rotate(360deg); /* La rotación final es de 360 grados */
+
+    }
+
+  }
+
+  
+
+  /* Animación de rebote */
+
+  .rebote {
+
+    animation: rebotar 1s infinite; /* La animación "rebotar" dura 1 segundo y se repite infinitamente */
+
+  }
+
+  @keyframes rebotar {
+
+    0%, 100% {
+
+      transform: translateY(0); /* Estado inicial y final: sin desplazamiento vertical */
+
+    }
+
+    50% {
+
+      transform: translateY(-10px); /* Pico del rebote: desplazamiento hacia arriba */
+
+    }
